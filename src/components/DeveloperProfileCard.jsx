@@ -5,7 +5,7 @@ export default function DeveloperProfileCard({ profile }) {
         <img
           src={profile.avatarUrl}
           alt={profile.name}
-          className="h-20 w-20 rounded-2xl object-cover ring-2 ring-cyan-300/40"
+          className="h-20 w-20 rounded-full object-cover ring-2 ring-cyan-300/40"
         />
         <div className="flex-1">
           <p className="text-xs uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">

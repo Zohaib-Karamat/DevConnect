@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import ThemeToggle from './ThemeToggle.jsx'
 
 const navLinks = [
   { label: 'Home', to: '/' },
@@ -37,6 +38,7 @@ export default function Navbar() {
               {link.label}
             </NavLink>
           ))}
+          <ThemeToggle />
         </nav>
         <button
           type="button"
@@ -71,6 +73,7 @@ export default function Navbar() {
               {link.label}
             </NavLink>
           ))}
+          <ThemeToggle />
         </div>
       </div>
     </header>

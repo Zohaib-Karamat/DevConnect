@@ -1,9 +1,11 @@
+import zohaibAvatar from '../assets/zohaib2.jpeg'
+
 export const developerProfile = {
-  name: 'Ava Martinez',
+  name: 'Zohaib Karamat',
   bio: 'Full-stack engineer focused on collaborative tools and crisp developer experiences.',
-  avatarUrl: 'https://i.pravatar.cc/160?img=32',
+  avatarUrl: zohaibAvatar,
   skills: ['React', 'Node.js', 'Tailwind', 'PostgreSQL', 'GraphQL'],
-  githubUrl: 'https://github.com/avamartinez',
+  githubUrl: 'https://github.com/zohaib-karamat',
 }
 
 export const activeProjects = [

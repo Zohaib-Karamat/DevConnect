@@ -4,8 +4,14 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 
-document.documentElement.classList.add('dark')
-document.documentElement.style.colorScheme = 'dark'
+const storageKey = 'devconnect-theme'
+const storedTheme = window.localStorage.getItem(storageKey)
+const initialTheme = storedTheme === 'light' || storedTheme === 'dark'
+  ? storedTheme
+  : 'dark'
+
+document.documentElement.classList.toggle('dark', initialTheme === 'dark')
+document.documentElement.style.colorScheme = initialTheme
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
